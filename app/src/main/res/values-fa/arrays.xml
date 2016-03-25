@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="route_names">
+        <item>خط ۱ چهارراه تهرانپارس - پایانه آزادی</item>
+        <item>خط ۲ پایانه خاوران - پایانه آزادی</item>
+        <item>خط ۳ پایانه خاوران - پایانه علم و صنعت</item>
+        <item>خط ۴ پایانه جنوب - پایانه افشار</item>
+        <item>خط ۵ پایانه علم و صنعت - پایانه بیهقی</item>
+        <item>خط ۶ پایانه لاله - پایانه افشار</item>
+        <item>خط ۷ پایانه راه آهن - پایانه تجریش</item>
+        <item>خط ۸ پایانه خاوران - پایانه جنوب</item>
+        <item>خط ۹ مترو جوانمرد قصاب - پایانه لاله</item>
+        <item>خط ۱۰ پایانه آزادی - دانشگاه علوم و تحقیقات</item>
+    </string-array>
+
+    <string-array name="activity_titles">
+        <item>پایانه آزادی - چهارراه تهرانپارس</item>
+        <item>پایانه خاوران - پایانه آزادی</item>
+        <item>پایانه خاوران - پایانه علم و صنعت</item>
+        <item>پایانه جنوب - پایانه افشار</item>
+        <item>پایانه علم و صنعت - پایانه بیهقی</item>
+        <item>پایانه لاله - پایانه افشار</item>
+        <item>پایانه راه آهن - پایانه تجریش</item>
+        <item>پایانه خاوران - پایانه جنوب</item>
+        <item>مترو جوانمرد قصاب - پایانه لاله</item>
+        <item>پایانه آزادی - دانشگاه علوم و تحقیقات</item>
+    </string-array>
+
+    <string-array name="route_1_stations">
+        <item>چهارراه تهرانپارس</item>
+        <item>داریوش</item>
+        <item>خاقانی</item>
+        <item>ابوریحان</item>
+        <item>آیت شرقی</item>
+        <item>آیت غربی</item>
+        <item>پل نیروی هوایی</item>
+        <item>وحیدیه</item>
+        <item>سبلان</item>
+        <item>فرودگاه</item>
+        <item>فتحنایی</item>
+        <item>بوعلی</item>
+        <item>منتظری</item>
+        <item>امام حسین (ع)</item>
+        <item>پل چوبی</item>
+        <item>شریعتی</item>
+        <item>دروازه دولت</item>
+        <item>فردوسی شرقی</item>
+        <item>فردوسی غربی</item>
+        <item>چهارراه ولیعصر شرقی</item>
+        <item>چهارراه ولیعصر غربی</item>
+        <item>دانشگاه تهران</item>
+        <item>میدان انقلاب</item>
+        <item>دکتر قریب</item>
+        <item>نواب شرقی</item>
+        <item>نواب غربی</item>
+        <item>بهبودی</item>
+        <item>دانشگاه شریف</item>
+        <item>استاد معین</item>
+        <item>آزادی</item>
+        <item>پایانه آزادی</item>
+    </string-array>
+
+    <string-array name="route_2_stations">
+        <item>ترمینال خاوران</item>
+        <item>پمپ گاز</item>
+        <item>فرهنگسرای خاوران</item>
+        <item>باسکول</item>
+        <item>اتابک</item>
+        <item>نفیس</item>
+        <item>امیرسلیمانی</item>
+        <item>مخبر</item>
+        <item>میدان خراسان</item>
+        <item>مشهدی رحیم - زیبا</item>
+        <item>میدان قیام</item>
+        <item>چهارراه مولوی</item>
+        <item>سعادت</item>
+        <item>میدان محمدیه</item>
+        <item>وحدت اسلامی</item>
+        <item>ولیعصر شرقی</item>
+        <item>ولیعصر غربی</item>
+        <item>میدان رازی</item>
+        <item>عباسی</item>
+        <item>کشاورز</item>
+        <item>امامزاده معصوم</item>
+        <item>دوراهی قپان</item>
+        <item>فرهنگسرای قرآن</item>
+        <item>میدان شمشیری</item>
+        <item>جرجانی</item>
+        <item>سه‌راهی بوتان</item>
+        <item>سیمتری جی</item>
+        <item>هاشمی</item>
+        <item>میدان آزادی</item>
+        <item>پایانه آزادی</item>
+    </string-array>
+
+    <string-array name="route_3_stations">
+        <item>پایانه خاوران</item>
+        <item>بسیج</item>
+        <item>رحمانی</item>
+        <item>ولیعصر</item>
+        <item>آشوری</item>
+        <item>آهنگ</item>
+        <item>رحیمی</item>
+        <item>محلاتی</item>
+        <item>قصر فیروزه</item>
+        <item>ائمه اطهار</item>
+        <item>پیروزی</item>
+        <item>نیرو هوایی</item>
+        <item>امامت</item>
+        <item>آیت جنوبی</item>
+        <item>آیت شمالی</item>
+        <item>تلفنخانه</item>
+        <item>نبوت</item>
+        <item>سرسبز</item>
+        <item>پایانه علم و صنعت</item>
+    </string-array>
+
+    <string-array name="route_4_stations">
+        <item>پایانه جنوب</item>
+        <item>چهارراه روغن نباتی</item>
+        <item>شهید رجایی</item>
+        <item>شهید امامی</item>
+        <item>میدان بهمن</item>
+        <item>قالیشویی</item>
+        <item>پل جوادیه</item>
+        <item>رباط کریم</item>
+        <item>هلال احمر</item>
+        <item>صفدری</item>
+        <item>کمیل</item>
+        <item>امام خمینی</item>
+        <item>آذربایجان</item>
+        <item>جمهوری</item>
+        <item>آزادی جنوبی</item>
+        <item>آزادی شمالی</item>
+        <item>توحید</item>
+        <item>باقرخان</item>
+        <item>کوی نصر</item>
+        <item>ملاصدرا</item>
+        <item>پل مدیریت</item>
+        <item>آتی ساز</item>
+        <item>نمایشگاه بین المللی</item>
+        <item>تابناک</item>
+        <item>پایانه افشار</item>
+    </string-array>
+
+    <string-array name="route_5_stations">
+        <item>پایانه علم و صنعت</item>
+        <item>آیت</item>
+        <item>میدان رسالت</item>
+        <item>کرمان</item>
+        <item>اثنی عشری</item>
+        <item>استاد حسن بنا</item>
+        <item>سید خندان</item>
+        <item>بهشت مادران</item>
+        <item>مصلی</item>
+        <item>پایانه بیهقی</item>
+    </string-array>
+
+    <string-array name="route_6_stations">
+        <item>پایانه لاله</item>
+        <item>کوی یاس</item>
+        <item>مرکز مخابرات</item>
+        <item>کوثر</item>
+        <item>ابوذر</item>
+        <item>دانشگاه اهل بیت</item>
+        <item>سازمان جنگلها</item>
+        <item>محلاتی</item>
+        <item>ایران خودرو</item>
+        <item>مینی سیتی</item>
+        <item>ازگل</item>
+        <item>اراج</item>
+        <item>گلچین</item>
+        <item>شهرک شهید رجایی</item>
+        <item>نوبنیاد</item>
+        <item>اختیاریه</item>
+        <item>دیباجی</item>
+        <item>قیطریه</item>
+        <item>بهار</item>
+        <item>دستور</item>
+        <item>آفریقا</item>
+        <item>الهیه</item>
+        <item>پایانه افشار</item>
+    </string-array>
+
+    <string-array name="route_7_stations">
+        <item>میدان راه‌آهن</item>
+        <item>مختاری</item>
+        <item>مولوی جنوبی</item>
+        <item>مولوی شمالی</item>
+        <item>مدرس - معزالسلطان</item>
+        <item>پل امیربهادر</item>
+        <item>فرهنگ</item>
+        <item>منیریه</item>
+        <item>امام خمینی</item>
+        <item>جامی</item>
+        <item>جمهوری</item>
+        <item>انقلاب جنوبی</item>
+        <item>انقلاب شمالی</item>
+        <item>طالقانی</item>
+        <item>دمشق</item>
+        <item>میدان ولیعصر جنوبی</item>
+        <item>میدان ولیعصر شمالی</item>
+        <item>قدس</item>
+        <item>مطهری</item>
+        <item>بهشتی</item>
+        <item>پله اول</item>
+        <item>پله سوم</item>
+        <item>آبشار</item>
+        <item>سی و دو</item>
+        <item>توانیر</item>
+        <item>پل همت</item>
+        <item>میدان ونک</item>
+        <item>سه راه ونک</item>
+        <item>میرداماد</item>
+        <item>ظفر</item>
+        <item>نیایش</item>
+        <item>پارک ملت</item>
+        <item>خبرنگاران</item>
+        <item>امانیه</item>
+        <item>پارک وی</item>
+        <item>محمودیه</item>
+        <item>همایونی</item>
+        <item>پسیان</item>
+        <item>باغ فردوس</item>
+        <item>کاظمی</item>
+        <item>پایانه تجریش</item>
+    </string-array>
+
+    <string-array name="route_8_stations">
+        <item>پایانه خاوران</item>
+        <item>شهرک شهید بروجردی</item>
+        <item>شهرک شاهد</item>
+        <item>هفده شهریور</item>
+        <item>پارک بعثت</item>
+        <item>پایانه جنوب</item>
+    </string-array>
+
+    <string-array name="route_9_stations">
+        <item>پایانه جوانمرد قصاب</item>
+        <item>میدان نماز</item>
+        <item>گذرنامه</item>
+        <item>دیلمان</item>
+        <item>غیوری</item>
+        <item>شهید تراب</item>
+        <item>معدن</item>
+        <item>شهید بروجردی</item>
+        <item>توسکا</item>
+        <item>رضایی</item>
+        <item>ابراهیمی</item>
+        <item>خاوران</item>
+        <item>صاحب الزمان</item>
+        <item>محلاتی</item>
+        <item>بوستان رجبی</item>
+        <item>درودیان</item>
+        <item>پیروزی</item>
+        <item>صفا</item>
+        <item>دماوند</item>
+        <item>مدنی</item>
+        <item>اکبرنژاد</item>
+        <item>سبلان</item>
+        <item>حیدری</item>
+        <item>فرجام</item>
+        <item>کوثری</item>
+        <item>مبارک آباد</item>
+        <item>شعبانلو</item>
+        <item>گلشن</item>
+        <item>اراج</item>
+        <item>ازگل</item>
+        <item>پیام نور</item>
+        <item>مینی سیتی</item>
+        <item>قائم</item>
+        <item>کوثر</item>
+        <item>پایانه لاله</item>
+    </string-array>
+
+    <string-array name="route_10_stations">
+        <item>پایانه آزادی</item>
+        <item>صادقیه - جناح</item>
+        <item>سازمان آب</item>
+        <item>مسجد جامع</item>
+        <item>مرزداران</item>
+        <item>باغ فیض</item>
+        <item>تیراژه</item>
+        <item>مخبری</item>
+        <item>پونک جنوبی</item>
+        <item>پونک شمالی</item>
+        <item>مجتمع قضایی</item>
+        <item>طالقانی</item>
+        <item>اشرفی اصفهانی</item>
+        <item>الوند</item>
+        <item>تلفنخانه</item>
+        <item>دانشگاه علوم و تحقیقات</item>
+    </string-array>
+
+    <string-array name="language_list_entries">
+        <item>انگلیسی</item>
+        <item>فارسی</item>
+    </string-array>
+
+</resources>

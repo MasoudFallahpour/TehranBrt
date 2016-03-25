@@ -1,0 +1,53 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">بی آر تی تهران</string>
+
+    <!-- Strings used in AboutActivity class -->
+    <string name="app_description">این برنامه خطوط و ایستگاههای اتوبوسهای تندرو شهر تهران را نمایش میدهد.</string>
+    <string name="app_developer">برنامه‌نویس</string>
+    <string name="app_version_format">ویرایش <xliff:g id="version_name">%s</xliff:g></string>
+    <string name="app_github_page">کد برنامه</string>
+    <string name="used_libraries">کتابخانه‌های استفاده شده</string>
+    <string name="used_font">قلم استفاده شده</string>
+    <string name="shabnam">شبنم</string>
+    <string name="masood_fallahpoor">مسعود فلاحپور</string>
+
+    <!-- Activity titles -->
+    <string name="title_about">درباره</string>
+    <string name="title_settings">تنظیمات</string>
+
+    <string name="select_language">انتخاب زبان</string>
+
+    <!-- Navigation drawer strings -->
+    <string name="settings">تنظیمات</string>
+    <string name="latest_changes">آخرین تغییرات</string>
+    <string name="about">درباره</string>
+    <string name="exit">خروج</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- ckChangelog library strings -->
+    <string name="changelog_full_title">آخرین تغییرات</string>
+    <string name="changelog_ok_button">خُب</string>
+
+    <!-- ACRA library strings -->
+    <string name="crash_toast_text">بی آر تی تهران دچار مشکل شده است</string>
+    <string name="crash_dialog_text">برنامهٔ بی آر تی تهران دچار مشکل شده است. آیا تمایل دارید گزارش مشکل برای توسعه‌دهندهٔ برنامه فرستاده شود؟</string>
+    <string name="crash_dialog_positive_button_text">بله</string>
+    <string name="crash_dialog_negative_button_text">خیر</string>
+
+    <!-- Help dialog strings -->
+    <string name="action_help">راهنما</string>
+    <string name="help">راهنما</string>
+    <string name="help_text">
+        - ایستگاه هایی که در کنار نام آنها یک مربع توپر قرار دارد، ایستگاه های دوطرفه هستند.
+        "\n"
+        - ایستگاه هایی که در کنار آنها یک مربع جهتدار قرار دارد، ایستگاه های یکطرفه هستند.
+        "\n"
+        - ایستگاه هایی که در نزدیکی یکی از ایستگاه های مترو قرار گرفته اند با نماد مترو مشخص شده‌اند.
+
+    </string>
+    <string name="ok">خُب</string>
+
+</resources>

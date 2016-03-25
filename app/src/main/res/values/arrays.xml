@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="route_names">
+        <item>Route 1 Tehranpars Intersection - Azadi Terminal</item>
+        <item>Route 2 Khavaran Terminal - Azadi Terminal</item>
+        <item>Route 3 Khavaran Terminal - Elm-o-sanat Terminal</item>
+        <item>Route 4 South Terminal - Afshar Terminal</item>
+        <item>Route 5 Elm-o-sanat Terminal - Beyhaghi Terminal</item>
+        <item>Route 6 Laleh Terminal - Afshar Terminal</item>
+        <item>Route 7 Rah Ahan Terminal - Tajrish Terminal</item>
+        <item>Route 8 Khavaran Terminal - South Terminal</item>
+        <item>Route 9 Javanmard Ghasab Metro Station - Laleh Terminal</item>
+        <item>Route 10 Azadi Terminal - Oloom Tahghighat University</item>
+    </string-array>
+
+    <string-array name="activity_titles">
+        <item>Tehranpars Intersection - Azadi Terminal</item>
+        <item>Khavaran Terminal - Azadi Terminal</item>
+        <item>Khavaran Terminal - Elm-o-sanat Terminal</item>
+        <item>South Terminal - Afshar Terminal</item>
+        <item>Elm-o-sanat Terminal - Beyhaghi Terminal</item>
+        <item>Laleh Terminal - Afshar Terminal</item>
+        <item>Rah Ahan Terminal - Tajrish Terminal</item>
+        <item>Khavaran Terminal - South Terminal</item>
+        <item>Javanmard Ghasab Metro Station - Laleh Terminal</item>
+        <item>Azadi Terminal - Oloom Tahghighat University</item>
+    </string-array>
+
+    <integer-array name="route_colors">
+        <item>@color/red</item>
+        <item>@color/purple</item>
+        <item>@color/blue</item>
+        <item>@color/light_blue</item>
+        <item>@color/pink</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/light_green</item>
+        <item>@color/brown</item>
+    </integer-array>
+
+    <string-array name="route_1_stations">
+        <item>Tehranpars Intersection</item>
+        <item>Dariush</item>
+        <item>Khaghani</item>
+        <item>Aboureyhan</item>
+        <item>Ayat East</item>
+        <item>Ayat West</item>
+        <item>Niroo Havaee Bridge</item>
+        <item>Vahidiye</item>
+        <item>Sabalan</item>
+        <item>Foroudgah</item>
+        <item>Fathnaei</item>
+        <item>Boo Ali</item>
+        <item>Montazeri</item>
+        <item>Emam Hossein</item>
+        <item>Pol-e Choubi</item>
+        <item>Shariati</item>
+        <item>Darvaze Dowlat</item>
+        <item>Ferdowsi East</item>
+        <item>Ferdowsi West</item>
+        <item>Valiasr Intersection East</item>
+        <item>Valiasr Intersection West</item>
+        <item>Tehran University</item>
+        <item>Enghelab Square</item>
+        <item>Doctor Gharib</item>
+        <item>Navab East</item>
+        <item>Navab West</item>
+        <item>Behboodi</item>
+        <item>Sharif University</item>
+        <item>Ostad Moein</item>
+        <item>Azadi</item>
+        <item>Azadi Terminal</item>
+    </string-array>
+
+    <integer-array name="route_1_features">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>5</item>
+        <item>6</item>
+        <item>0</item>
+        <item>4</item>
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+        <item>0</item>
+        <item>4</item>
+        <item>2</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="route_2_stations">
+        <item>Khavaran Terminal</item>
+        <item>Pomp-e Gaz</item>
+        <item>Farhangsara Khavaran</item>
+        <item>Baskool</item>
+        <item>Atabak</item>
+        <item>Nafis</item>
+        <item>Amir Soleymani</item>
+        <item>Mokhber</item>
+        <item>Khorasan Square</item>
+        <item>Mashhadi Rahim - Ziba</item>
+        <item>Ghyiam Square</item>
+        <item>Molavi Intersection</item>
+        <item>Saadat</item>
+        <item>Mohamadiye Square</item>
+        <item>Vahdat-e Eslami</item>
+        <item>Valiasr East</item>
+        <item>Valiasr West</item>
+        <item>Razi Square</item>
+        <item>Abbasi</item>
+        <item>Keshavarz</item>
+        <item>Emamzade Masoom</item>
+        <item>Ghapan</item>
+        <item>Farhangsara Quran</item>
+        <item>Shamshiri Square</item>
+        <item>Jorjani</item>
+        <item>Boutan</item>
+        <item>Jey</item>
+        <item>Hashemi</item>
+        <item>Azadi Square</item>
+        <item>Azadi Terminal</item>
+    </string-array>
+
+    <integer-array name="route_2_features">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="route_3_stations">
+        <item>Khavaran Terminal</item>
+        <item>Basij</item>
+        <item>Rahmani</item>
+        <item>Valiasr</item>
+        <item>Ashouri</item>
+        <item>Ahang</item>
+        <item>Rahimi</item>
+        <item>Mahallati</item>
+        <item>Qasr-e Firooze</item>
+        <item>Aeme Athar</item>
+        <item>Pirouzi</item>
+        <item>Niroo Havaee</item>
+        <item>Emamat</item>
+        <item>Ayat South</item>
+        <item>Ayat North</item>
+        <item>Telefon Khane</item>
+        <item>Nabovat</item>
+        <item>Sarsabz</item>
+        <item>Elm-o-sanat Terminal</item>
+    </string-array>
+
+    <integer-array name="route_3_features">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="route_4_stations">
+        <item>South Terminal</item>
+        <item>Roghan Nabati Intersection</item>
+        <item>Shahid Rajaee</item>
+        <item>Shahid Emami</item>
+        <item>Bahman Square</item>
+        <item>Ghalishouei</item>
+        <item>Javadiye Bridge</item>
+        <item>Robat Karim</item>
+        <item>Helal-e Ahmar</item>
+        <item>Safdari</item>
+        <item>Komeyl</item>
+        <item>Emam Khomeini</item>
+        <item>Azarbayjan</item>
+        <item>Jomhoori</item>
+        <item>Azadi South</item>
+        <item>Azadi North</item>
+        <item>Tohid</item>
+        <item>Bagherkhan</item>
+        <item>Kooy-e Nasr</item>
+        <item>Mollasadra</item>
+        <item>Modiriat Bridge</item>
+        <item>Atisaz</item>
+        <item>International Exhibition Center</item>
+        <item>Tabnak</item>
+        <item>Afshra Terminal</item>
+    </string-array>
+
+    <integer-array name="route_4_features">
+        <item>4</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="route_5_stations">
+        <item>Elm-o-sanat Terminal</item>
+        <item>Ayat</item>
+        <item>Relasat Square</item>
+        <item>Kerman</item>
+        <item>Asna Ashari</item>
+        <item>Ostad Hasan Bana</item>
+        <item>Seyed Khandan</item>
+        <item>Behesht-e Madaran</item>
+        <item>Mosalla</item>
+        <item>Beyhaghi Terminal</item>
+    </string-array>
+
+    <integer-array name="route_5_features">
+        <item>4</item>
+        <item>4</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="route_6_stations">
+        <item>Laleh Terminal</item>
+        <item>Kooy-e Yas</item>
+        <item>Mokhaberat</item>
+        <item>Kosar</item>
+        <item>Abouzar</item>
+        <item>Ahle Beyt University</item>
+        <item>Sazman Jangalha</item>
+        <item>Mahallati</item>
+        <item>Iran Khodro</item>
+        <item>Minisiti</item>
+        <item>Ozgol</item>
+        <item>Araj</item>
+        <item>Golchin</item>
+        <item>Shahrak Shahid Rajaee</item>
+        <item>Nobonyand</item>
+        <item>Ekhtiariye</item>
+        <item>Dibaji</item>
+        <item>Gheytatiye</item>
+        <item>Bahar</item>
+        <item>Dastour</item>
+        <item>Afrigha</item>
+        <item>Elahiye</item>
+        <item>Afshar Terminal</item>
+    </string-array>
+
+    <integer-array name="route_6_features">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="route_7_stations">
+        <item>Rahahan Square</item>
+        <item>Mohktari</item>
+        <item>Molavi South</item>
+        <item>Molavi North</item>
+        <item>Modarres - Moezosoltan</item>
+        <item>Amir Bahador Bridge</item>
+        <item>Farhang</item>
+        <item>Moniriye</item>
+        <item>Emam Khomeini</item>
+        <item>Jami</item>
+        <item>Jomhouri</item>
+        <item>Enghelab South</item>
+        <item>Enghelab North</item>
+        <item>Taleghani</item>
+        <item>Dameshgh</item>
+        <item>Valiasr Square South</item>
+        <item>Valiasr Square North</item>
+        <item>Ghods</item>
+        <item>Motahari</item>
+        <item>Beheshti</item>
+        <item>Pele Aval</item>
+        <item>Pele Sevom</item>
+        <item>Abshar</item>
+        <item>32</item>
+        <item>Tavanir</item>
+        <item>Hemmat Bridge</item>
+        <item>Vanak Square</item>
+        <item>Serah Vanak</item>
+        <item>Mirdamad</item>
+        <item>Zafar</item>
+        <item>Niayesh</item>
+        <item>Mellat Park</item>
+        <item>Khabarnegaran</item>
+        <item>Amaniye</item>
+        <item>Parkvey</item>
+        <item>Mahmoudiye</item>
+        <item>Homayouni</item>
+        <item>Pesian</item>
+        <item>Ferdows Garden</item>
+        <item>Kazemi</item>
+        <item>Tajrish Terminal</item>
+    </string-array>
+
+    <integer-array name="route_7_features">
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>0</item>
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="route_8_stations">
+        <item>Khavaran Terminal</item>
+        <item>Shahrak Shahid Boroujerdi</item>
+        <item>Shahrak Shahed</item>
+        <item>Hefdah Shahrivar</item>
+        <item>Besat Park</item>
+        <item>South Terminal</item>
+    </string-array>
+
+    <integer-array name="route_8_features">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="route_9_stations">
+        <item>Javanmard Ghasab Terminal</item>
+        <item>Namaz Square</item>
+        <item>Gozarname</item>
+        <item>Deylaman</item>
+        <item>Ghayouri</item>
+        <item>Shahid Torab</item>
+        <item>Madan</item>
+        <item>Shahid Boroujerdi</item>
+        <item>Touska</item>
+        <item>Rezaei</item>
+        <item>Ebrahimi</item>
+        <item>Khavaran</item>
+        <item>Sahebzaman</item>
+        <item>Mahalati</item>
+        <item>Rajabi Park</item>
+        <item>Doroudian</item>
+        <item>Pirouzi</item>
+        <item>Safa</item>
+        <item>Damavand</item>
+        <item>Madani</item>
+        <item>Akbarnejad</item>
+        <item>Sabalan</item>
+        <item>Heydari</item>
+        <item>Farjam</item>
+        <item>Kosari</item>
+        <item>Mobarakabad</item>
+        <item>Shabanlou</item>
+        <item>Golshan</item>
+        <item>Araj</item>
+        <item>Ozgol</item>
+        <item>Payam-e Noor</item>
+        <item>Minisiti</item>
+        <item>Ghaem</item>
+        <item>Kosar</item>
+        <item>Laleh Terminal</item>
+    </string-array>
+
+    <integer-array name="route_9_features">
+        <item>4</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="route_10_stations">
+        <item>Azadi Terminal</item>
+        <item>Sadeghiye - Jenah</item>
+        <item>Sazman Ab</item>
+        <item>Masjed Jame</item>
+        <item>Marzdaran</item>
+        <item>Bagh-e Feyz</item>
+        <item>Tiraje</item>
+        <item>Mohkberi</item>
+        <item>Pounak South</item>
+        <item>Pounak North</item>
+        <item>Mojtama-e Ghazaee</item>
+        <item>Taleghani</item>
+        <item>Ashrafi Esfahani</item>
+        <item>Alvand</item>
+        <item>Telefon Khane</item>
+        <item>Oloom Tahghighat University</item>
+    </string-array>
+
+    <integer-array name="route_10_features">
+        <item>4</item>
+        <item>4</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <string-array name="language_list_entries">
+        <item>English</item>
+        <item>Persian</item>
+    </string-array>
+
+    <string-array name="language_list_values" translatable="false">
+        <item>en</item>
+        <item>fa</item>
+    </string-array>
+
+</resources>
