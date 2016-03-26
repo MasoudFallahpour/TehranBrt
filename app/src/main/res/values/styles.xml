@@ -20,23 +20,23 @@
 
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="XMYekan">
+    <style name="Shabnam">
         <item name="fontPath">fonts/shabnam_regular.ttf</item>
     </style>
 
-    <style name="TextAppearance.Large" parent="XMYekan">
+    <style name="TextAppearance.Large" parent="Shabnam">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="TextAppearance.Medium" parent="XMYekan">
+    <style name="TextAppearance.Medium" parent="Shabnam">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="TextAppearance.Small" parent="XMYekan">
+    <style name="TextAppearance.Small" parent="Shabnam">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">14sp</item>
