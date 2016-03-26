@@ -93,13 +93,49 @@
             android:text="@string/used_libraries" />
 
         <TextView
+            android:id="@+id/library1"
             style="@style/TextAppearance.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:autoLink="web"
             android:gravity="center_horizontal"
-            android:text="@string/libraries" />
+            android:text="@string/library_localization_activity" />
+
+        <TextView
+            android:id="@+id/library2"
+            style="@style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/library_alert_dialog_pro" />
+
+        <TextView
+            android:id="@+id/library3"
+            style="@style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/library_acra" />
+
+        <TextView
+            android:id="@+id/library4"
+            style="@style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/library_calligraphy" />
+
+        <TextView
+            android:id="@+id/library5"
+            style="@style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/library_ck_change_log" />
 
         <TextView
             style="@style/TextAppearance.Medium"
@@ -112,6 +148,7 @@
             android:text="@string/used_font" />
 
         <TextView
+            android:id="@+id/fontNameTextView"
             style="@style/TextAppearance.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -9,10 +9,25 @@
     <string name="app_github_page">Source Code</string>
     <string name="app_github_address" translatable="false">https://github.com/MasoodFallahpoor/TehranBrt</string>
     <string name="used_libraries">Used Libraries</string>
-    <string name="libraries" translatable="false">LocalizationActivity"\n"AlertDialogPro"\n"ACRA"\n"Calligraphy"\n"ckChangeLog</string>
+    <string name="library_localization_activity" translatable="false">
+        <a href="https://github.com/akexorcist/Android-LocalizationActivity">LocalizationActivity</a>
+    </string>
+    <string name="library_alert_dialog_pro" translatable="false">
+        <a href="https://github.com/fengdai/AlertDialogPro">AlertDialogPro</a>
+    </string>
+    <string name="library_acra" translatable="false">
+        <a href="https://github.com/ACRA/acra">ACRA</a>
+    </string>
+    <string name="library_calligraphy" translatable="false">
+        <a href="https://github.com/chrisjenx/Calligraphy">Calligraphy</a>
+    </string>
+    <string name="library_ck_change_log" translatable="false">
+        <a href="https://github.com/cketti/ckChangeLog">ckChangeLog</a>
+    </string>
     <string name="used_font">Used Font</string>
-    <string name="shabnam">Shabnam</string>
-
+    <string name="shabnam">
+        <a href="https://github.com/rastikerdar/shabnam-font">Shabnam</a>
+    </string>
     <string name="masood_fallahpoor">Masood Fallahpoor</string>
 
     <!-- Activity titles -->

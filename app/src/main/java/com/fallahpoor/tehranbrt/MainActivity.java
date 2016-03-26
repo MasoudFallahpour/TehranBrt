@@ -48,7 +48,6 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * @author Masood Fallahpoor
  */
 // TODO: Provide a consistent icon for settings in navigation drawer
-// TODO: Provide the links of used libraries and font
 // TODO: Make the accent color of Support Preference and AlertDialogPro libraries consistent with the accent color of the whole app
 public class MainActivity extends LocalizationActivity implements
         NavigationView.OnNavigationItemSelectedListener, RecyclerViewClickListener {

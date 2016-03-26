@@ -9,7 +9,9 @@
     <string name="app_github_page">کد برنامه</string>
     <string name="used_libraries">کتابخانه‌های استفاده شده</string>
     <string name="used_font">قلم استفاده شده</string>
-    <string name="shabnam">شبنم</string>
+        <string name="shabnam">
+        <a href="https://github.com/rastikerdar/shabnam-font">شبنم</a>
+    </string>
     <string name="masood_fallahpoor">مسعود فلاحپور</string>
 
     <!-- Activity titles -->

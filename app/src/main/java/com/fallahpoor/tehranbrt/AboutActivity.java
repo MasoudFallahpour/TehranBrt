@@ -24,6 +24,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.view.Window;
@@ -67,6 +68,14 @@ public class AboutActivity extends LocalizationActivity {
         } catch (NameNotFoundException e) {
             appVersionTextView.setText("1.0");
         }
+
+        ((TextView) findViewById(R.id.library1)).setMovementMethod(LinkMovementMethod.getInstance());
+        ((TextView) findViewById(R.id.library2)).setMovementMethod(LinkMovementMethod.getInstance());
+        ((TextView) findViewById(R.id.library3)).setMovementMethod(LinkMovementMethod.getInstance());
+        ((TextView) findViewById(R.id.library4)).setMovementMethod(LinkMovementMethod.getInstance());
+        ((TextView) findViewById(R.id.library5)).setMovementMethod(LinkMovementMethod.getInstance());
+        ((TextView) findViewById(R.id.fontNameTextView)).setMovementMethod(
+                LinkMovementMethod.getInstance());
 
         setupWindowAnimation();
 
