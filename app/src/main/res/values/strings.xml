@@ -59,7 +59,7 @@
     <string name="action_help">Help</string>
     <string name="help">Help</string>
     <string name="help_text">
-        - Stations with a solid square beside their names are two-way stations."\n"- Stations with a decorated square beside their names are one-way stations."\n"- Stations that are near a metro station are marked with metro\'s logo.
+        - A station with a solid square beside its name is a two-way station.\n- A station with a decorated square beside its name is a one-way station.\n- A station that is near a metro station is marked with the logo of metro.
     </string>
     <string name="ok">OK</string>
 
