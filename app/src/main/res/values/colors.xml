@@ -5,6 +5,7 @@
     <color name="colorPrimary">#F5F5F5</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBackground">#FAFAFA</color>
+    <color name="navigatonViewItemTextColor">#E6000000</color>
     <color name="red">#F44336</color>
     <color name="purple">#9C27B0</color>
     <color name="blue">#3F51B5</color>
