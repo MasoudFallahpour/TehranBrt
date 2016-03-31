@@ -15,8 +15,6 @@
         android:background="@android:color/white"
         android:orientation="horizontal"
         android:paddingEnd="@dimen/station_list_item_horizontal_padding"
-        android:paddingLeft="@dimen/station_list_item_horizontal_padding"
-        android:paddingRight="@dimen/station_list_item_horizontal_padding"
         android:paddingStart="@dimen/station_list_item_horizontal_padding">
 
         <FrameLayout
@@ -47,7 +45,6 @@
             android:layout_weight="1"
             android:gravity="start|center_vertical"
             android:minHeight="?android:attr/listPreferredItemHeight"
-            android:paddingLeft="10dp"
             android:paddingStart="10dp"
             android:text="Station Name" />
 
