@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="2dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginTop="2dp"
+    android:layout_marginBottom="@dimen/route_list_item_vertical_margin"
+    android:layout_marginLeft="@dimen/route_list_item_horizontal_margin"
+    android:layout_marginRight="@dimen/route_list_item_horizontal_margin"
+    android:layout_marginTop="@dimen/route_list_item_vertical_margin"
     tools:ignore="ContentDescription,HardcodedText">
 
     <LinearLayout

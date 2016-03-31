@@ -5,9 +5,12 @@
     <dimen name="activity_horizontal_margin">8dp</dimen>
     <dimen name="activity_vertical_margin">8dp</dimen>
     <dimen name="station_list_item_horizontal_margin">8dp</dimen>
+    <dimen name="station_list_item_vertical_margin">2dp</dimen>
     <dimen name="station_list_item_horizontal_padding">20dp</dimen>
     <dimen name="station_list_item_icons_width">20dp</dimen>
     <dimen name="station_list_item_icons_height">20dp</dimen>
     <dimen name="station_list_item_arrow_width">15dp</dimen>
+    <dimen name="route_list_item_horizontal_margin">8dp</dimen>
+    <dimen name="route_list_item_vertical_margin">2dp</dimen>
 
 </resources>
