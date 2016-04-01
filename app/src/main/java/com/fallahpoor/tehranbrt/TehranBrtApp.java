@@ -65,7 +65,6 @@ public class TehranBrtApp extends Application {
                 .build());
 
         ACRA.init(this);
-        LocaleUtils.initialize();
 
     }
 

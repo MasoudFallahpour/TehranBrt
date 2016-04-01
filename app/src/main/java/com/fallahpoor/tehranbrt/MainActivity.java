@@ -53,6 +53,7 @@ public class MainActivity extends LocalizationActivity implements
         NavigationView.OnNavigationItemSelectedListener, RecyclerViewClickListener {
 
     public static final String ROUTE_NUMBER = "route_number";
+    public static final String LANGUAGE_FA = "fa";
     private DrawerLayout mDrawerLayout;
 
     @Override
@@ -67,11 +68,9 @@ public class MainActivity extends LocalizationActivity implements
             getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         }
 
-        setDefaultLanguage(LocaleUtils.LANGUAGE_FA);
+        setDefaultLanguage(LANGUAGE_FA);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        LocaleUtils.setLocale(getLanguage());
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -167,7 +166,7 @@ public class MainActivity extends LocalizationActivity implements
 
         ChangeLog changeLog = new ChangeLog(this);
 
-        if (getLanguage().equalsIgnoreCase(LocaleUtils.LANGUAGE_FA)) {
+        if (getLanguage().equalsIgnoreCase(LANGUAGE_FA)) {
             changeLog.setDirection(ChangeLog.Direction.RTL);
         } else {
             changeLog.setDirection(ChangeLog.Direction.LTR);

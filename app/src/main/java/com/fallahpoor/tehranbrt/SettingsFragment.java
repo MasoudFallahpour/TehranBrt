@@ -61,7 +61,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 language = languagePreference.getEntryValues()[index].toString();
 
                 ((LocalizationActivity) getActivity()).setLanguage(language);
-                LocaleUtils.setLocale(language);
 
             }
 
