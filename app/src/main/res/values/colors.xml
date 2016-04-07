@@ -3,7 +3,7 @@
 
     <color name="colorPrimaryDark">#E0E0E0</color>
     <color name="colorPrimary">#F5F5F5</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#E53935</color>
     <color name="colorBackground">#FAFAFA</color>
     <color name="navigatonViewItemTextColor">#E6000000</color>
     <color name="red">#F44336</color>
