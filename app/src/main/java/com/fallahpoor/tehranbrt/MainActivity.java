@@ -48,7 +48,6 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * @author Masood Fallahpoor
  */
 // TODO: Provide a consistent icon for settings in navigation drawer
-// TODO: Make the accent color of Support Preference and AlertDialogPro libraries consistent with the accent color of the whole app
 public class MainActivity extends LocalizationActivity implements
         NavigationView.OnNavigationItemSelectedListener, RecyclerViewClickListener {
 
@@ -78,7 +77,7 @@ public class MainActivity extends LocalizationActivity implements
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawerLayout.setDrawerListener(toggle);
+        mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
