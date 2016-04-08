@@ -47,7 +47,6 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  *
  * @author Masood Fallahpoor
  */
-// TODO: Provide a consistent icon for settings in navigation drawer
 public class MainActivity extends LocalizationActivity implements
         NavigationView.OnNavigationItemSelectedListener, RecyclerViewClickListener {
 
