@@ -13,6 +13,7 @@
         <a href="https://github.com/rastikerdar/shabnam-font">شبنم</a>
     </string>
     <string name="masood_fallahpoor">مسعود فلاحپور</string>
+    <string name="reference">اطلاعات خطوط و ایستگاهها برگرفته شده از آدرس زیر است</string>
 
     <!-- Activity titles -->
     <string name="title_about">درباره</string>
@@ -42,7 +43,7 @@
     <!-- Help dialog strings -->
     <string name="action_help">راهنما</string>
     <string name="help">راهنما</string>
-    <string name="help_text">		
+    <string name="help_text">
 		- ایستگاهی که در کنار نام آن یک مربع توپر قرار دارد ایستگاهی دوطرفه است.\n- ایستگاهی که در کنار نام آن یک مربع همراه با جهت قرار دارد ایستگاهی یکطرفه است.\n- ایستگاهی که در نزدیکی یکی از ایستگاههای مترو قرار دارد با نماد مترو مشخص شده است.
     </string>
     <string name="ok">خُب</string>

@@ -156,6 +156,25 @@
             android:gravity="center_horizontal"
             android:text="@string/shabnam" />
 
+        <TextView
+            style="@style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/reference" />
+
+        <TextView
+            style="@style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="web"
+            android:gravity="center_horizontal"
+            android:text="@string/reference_web_site" />
+
     </LinearLayout>
 
 </ScrollView>

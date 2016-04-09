@@ -29,6 +29,8 @@
         <a href="https://github.com/rastikerdar/shabnam-font">Shabnam</a>
     </string>
     <string name="masood_fallahpoor">Masood Fallahpoor</string>
+    <string name="reference">The information of routes and stations are obtained from the following website</string>
+    <string name="reference_web_site" translatable="false">http://bus.tehran.ir</string>
 
     <!-- Activity titles -->
     <string name="title_about">About</string>
