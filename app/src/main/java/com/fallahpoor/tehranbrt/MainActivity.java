@@ -112,6 +112,10 @@ public class MainActivity extends LocalizationActivity implements
         Intent intent;
 
         switch (item.getItemId()) {
+            case R.id.nav_map:
+                intent = new Intent(this, MapActivity.class);
+                displayActivity(intent);
+                break;
             case R.id.nav_settings:
                 intent = new Intent(this, SettingsActivity.class);
                 displayActivity(intent);

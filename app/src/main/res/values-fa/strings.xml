@@ -18,10 +18,12 @@
     <!-- Activity titles -->
     <string name="title_about">درباره</string>
     <string name="title_settings">تنظیمات</string>
+    <string name="title_activity_map">ایستگاه‌ها بر روی نقشه</string>
 
     <string name="select_language">انتخاب زبان</string>
 
     <!-- Navigation drawer strings -->
+    <string name="map">ایستگاه‌ها بر روی نقشه</string>
     <string name="settings">تنظیمات</string>
     <string name="latest_changes">آخرین تغییرات</string>
     <string name="about">درباره</string>

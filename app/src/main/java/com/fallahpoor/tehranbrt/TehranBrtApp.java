@@ -20,6 +20,8 @@
 package com.fallahpoor.tehranbrt;
 
 import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
 
 import org.acra.ACRA;
 import org.acra.ReportField;
@@ -53,6 +55,12 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
         resDialogPositiveButtonText = R.string.crash_dialog_positive_button_text,
         resDialogNegativeButtonText = R.string.crash_dialog_negative_button_text)
 public class TehranBrtApp extends Application {
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 
     @Override
     public void onCreate() {
