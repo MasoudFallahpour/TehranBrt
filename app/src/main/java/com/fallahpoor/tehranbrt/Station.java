@@ -21,6 +21,8 @@ package com.fallahpoor.tehranbrt;
 
 import android.content.Context;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,11 +37,13 @@ public class Station {
     public final static int FEATURE_METRO = 4;
     private String mStationName;
     private int mStationFeatures;
+    private LatLng mStationPosition;
 
-    public Station(String stationName, int stationFeatures) {
+    public Station(String stationName, int stationFeatures, LatLng stationPosition) {
 
         mStationName = stationName;
         mStationFeatures = stationFeatures;
+        mStationPosition = stationPosition;
 
     }
 
@@ -51,63 +55,80 @@ public class Station {
         return mStationFeatures;
     }
 
+    public LatLng getStationPosition() {
+        return mStationPosition;
+    }
+
     public static List<Station> getStations(Context context, int routeNumber) {
 
         List<Station> stations = new ArrayList<>();
-        int stationsResId;
+        int stationsNamesResId;
         int stationFeaturesResId;
+        int stationsLatitudesResId = 0;
+        int stationsLongitudesResId = 0;
 
         switch (routeNumber) {
             case 1:
-                stationsResId = R.array.route_1_stations;
+                stationsNamesResId = R.array.route_1_stations;
                 stationFeaturesResId = R.array.route_1_features;
                 break;
             case 2:
-                stationsResId = R.array.route_2_stations;
+                stationsNamesResId = R.array.route_2_stations;
                 stationFeaturesResId = R.array.route_2_features;
                 break;
             case 3:
-                stationsResId = R.array.route_3_stations;
+                stationsNamesResId = R.array.route_3_stations;
                 stationFeaturesResId = R.array.route_3_features;
                 break;
             case 4:
-                stationsResId = R.array.route_4_stations;
+                stationsNamesResId = R.array.route_4_names;
                 stationFeaturesResId = R.array.route_4_features;
+                stationsLatitudesResId = R.array.route_4_latitudes;
+                stationsLongitudesResId = R.array.route_4_longitudes;
                 break;
             case 5:
-                stationsResId = R.array.route_5_stations;
+                stationsNamesResId = R.array.route_5_stations;
                 stationFeaturesResId = R.array.route_5_features;
                 break;
             case 6:
-                stationsResId = R.array.route_6_stations;
+                stationsNamesResId = R.array.route_6_stations;
                 stationFeaturesResId = R.array.route_6_features;
                 break;
             case 7:
-                stationsResId = R.array.route_7_stations;
+                stationsNamesResId = R.array.route_7_stations;
                 stationFeaturesResId = R.array.route_7_features;
                 break;
             case 8:
-                stationsResId = R.array.route_8_stations;
+                stationsNamesResId = R.array.route_8_stations;
                 stationFeaturesResId = R.array.route_8_features;
                 break;
             case 9:
-                stationsResId = R.array.route_9_stations;
+                stationsNamesResId = R.array.route_9_stations;
                 stationFeaturesResId = R.array.route_9_features;
                 break;
             case 10:
-                stationsResId = R.array.route_10_stations;
+                stationsNamesResId = R.array.route_10_stations;
                 stationFeaturesResId = R.array.route_10_features;
                 break;
             default:
-                stationsResId = R.array.route_1_stations;
+                stationsNamesResId = R.array.route_1_stations;
                 stationFeaturesResId = R.array.route_1_features;
         }
 
-        String[] stationNames = context.getResources().getStringArray(stationsResId);
+        String[] stationNames = context.getResources().getStringArray(stationsNamesResId);
         int[] stationFeatures = context.getResources().getIntArray(stationFeaturesResId);
+        String[] stationsLatitudes = context.getResources().getStringArray(stationsLatitudesResId);
+        String[] stationsLongitudes = context.getResources().getStringArray(stationsLongitudesResId);
 
         for (int i = 0; i < stationNames.length; i++) {
-            stations.add(new Station(stationNames[i], stationFeatures[i]));
+
+            String name = stationNames[i];
+            int features = stationFeatures[i];
+            double latitude = Double.valueOf(stationsLatitudes[i]);
+            double longitude = Double.valueOf(stationsLongitudes[i]);
+
+            stations.add(new Station(name, features, new LatLng(latitude, longitude)));
+
         }
 
         return stations;

@@ -218,7 +218,7 @@
         <item>4</item>
     </integer-array>
 
-    <string-array name="route_4_stations">
+    <string-array name="route_4_names">
         <item>South Terminal</item>
         <item>Roghan Nabati Intersection</item>
         <item>Shahid Rajaee</item>
@@ -244,6 +244,62 @@
         <item>International Exhibition Center</item>
         <item>Tabnak</item>
         <item>Afshra Terminal</item>
+    </string-array>
+
+    <string-array name="route_4_latitudes">
+        <item>35.651283</item>
+        <item>35.647641</item>
+        <item>35.648081</item>
+        <item>35.649197</item>
+        <item>35.649786</item>
+        <item>35.651211</item>
+        <item>35.653853</item>
+        <item>35.661720</item>
+        <item>35.668609</item>
+        <item>35.676174</item>
+        <item>35.681751</item>
+        <item>35.687747</item>
+        <item>35.694083</item>
+        <item>35.697551</item>
+        <item>35.700649</item>
+        <item>35.700649</item>
+        <item>35.706568</item>
+        <item>35.710210</item>
+        <item>35.725038</item>
+        <item>35.756876</item>
+        <item>35.771037</item>
+        <item>35.787493</item>
+        <item>35.792625</item>
+        <item>35.793032</item>
+        <item>35.790667</item>
+    </string-array>
+
+    <string-array name="route_4_longitudes">
+        <item>51.419153</item>
+        <item>51.415820</item>
+        <item>51.412419</item>
+        <item>51.402371</item>
+        <item>51.398262</item>
+        <item>51.397103</item>
+        <item>51.395231</item>
+        <item>51.388445</item>
+        <item>51.381767</item>
+        <item>51.380812</item>
+        <item>51.380163</item>
+        <item>51.379680</item>
+        <item>51.378756</item>
+        <item>51.378370</item>
+        <item>51.378042</item>
+        <item>51.378042</item>
+        <item>51.377763</item>
+        <item>51.377876</item>
+        <item>51.381478</item>
+        <item>51.387230</item>
+        <item>51.387597</item>
+        <item>51.391900</item>
+        <item>51.399405</item>
+        <item>51.404806</item>
+        <item>51.417479</item>
     </string-array>
 
     <integer-array name="route_4_features">
