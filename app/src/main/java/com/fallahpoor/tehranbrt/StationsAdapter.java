@@ -73,7 +73,7 @@ public class StationsAdapter extends RecyclerView.Adapter<StationsAdapter.MyView
         ImageView mStationDirectionImageView;
         ImageView mStationMetroImageView;
 
-        public MyViewHolder(View itemView) {
+        MyViewHolder(View itemView) {
 
             super(itemView);
 
@@ -107,15 +107,15 @@ public class StationsAdapter extends RecyclerView.Adapter<StationsAdapter.MyView
                     mStationDirectionImageView.setImageResource(R.mipmap.ic_up_arrow);
                     break;
                 case Station.FEATURE_METRO:
-                    mStationMetroImageView.setImageResource(R.mipmap.ic_metro_logo);
+                    mStationMetroImageView.setImageResource(R.drawable.ic_metro_logo);
                     break;
                 case (Station.FEATURE_ONE_WAY_DOWN + Station.FEATURE_METRO):
                     mStationDirectionImageView.setImageResource(R.mipmap.ic_down_arrow);
-                    mStationMetroImageView.setImageResource(R.mipmap.ic_metro_logo);
+                    mStationMetroImageView.setImageResource(R.drawable.ic_metro_logo);
                     break;
                 case (Station.FEATURE_ONE_WAY_UP + Station.FEATURE_METRO):
                     mStationDirectionImageView.setImageResource(R.mipmap.ic_up_arrow);
-                    mStationMetroImageView.setImageResource(R.mipmap.ic_metro_logo);
+                    mStationMetroImageView.setImageResource(R.drawable.ic_metro_logo);
                     break;
             } // end of switch
 
