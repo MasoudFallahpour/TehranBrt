@@ -20,6 +20,7 @@
 package com.fallahpoor.tehranbrt;
 
 import android.content.Context;
+import android.content.res.Resources;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -71,6 +72,8 @@ public class Station {
             case 1:
                 stationsNamesResId = R.array.route_1_stations;
                 stationFeaturesResId = R.array.route_1_features;
+                stationsLatitudesResId = R.array.route_1_latitudes;
+                stationsLongitudesResId = R.array.route_1_longitudes;
                 break;
             case 2:
                 stationsNamesResId = R.array.route_2_stations;
@@ -115,17 +118,30 @@ public class Station {
                 stationFeaturesResId = R.array.route_1_features;
         }
 
-        String[] stationNames = context.getResources().getStringArray(stationsNamesResId);
-        int[] stationFeatures = context.getResources().getIntArray(stationFeaturesResId);
-        String[] stationsLatitudes = context.getResources().getStringArray(stationsLatitudesResId);
-        String[] stationsLongitudes = context.getResources().getStringArray(stationsLongitudesResId);
+        Resources resources = context.getResources();
+
+        String[] stationNames = resources.getStringArray(stationsNamesResId);
+        int[] stationFeatures = resources.getIntArray(stationFeaturesResId);
+        String[] stationsLatitudes = new String[0];
+        String[] stationsLongitudes = new String[0];
+
+        if (stationsLatitudesResId != 0) {
+            stationsLatitudes = resources.getStringArray(stationsLatitudesResId);
+            stationsLongitudes = resources.getStringArray(stationsLongitudesResId);
+        }
 
         for (int i = 0; i < stationNames.length; i++) {
 
             String name = stationNames[i];
             int features = stationFeatures[i];
-            double latitude = Double.valueOf(stationsLatitudes[i]);
-            double longitude = Double.valueOf(stationsLongitudes[i]);
+
+            double latitude = 0;
+            double longitude = 0;
+
+            if (stationsLatitudes.length != 0) {
+                latitude = Double.valueOf(stationsLatitudes[i]);
+                longitude = Double.valueOf(stationsLongitudes[i]);
+            }
 
             stations.add(new Station(name, features, new LatLng(latitude, longitude)));
 

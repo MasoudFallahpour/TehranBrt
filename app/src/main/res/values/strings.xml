@@ -66,5 +66,7 @@
         - A station with a solid square beside its name is a two-way station.\n- A station with a decorated square beside its name is a one-way station.\n- A station that is near a metro station is marked with the logo of metro.
     </string>
     <string name="ok">OK</string>
-
+    <string name="dialog_message_maps_activity">
+        - A one-way station is marked with a pure white marker.
+    </string>
 </resources>

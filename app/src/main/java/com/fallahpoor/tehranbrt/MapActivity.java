@@ -1,9 +1,16 @@
 package com.fallahpoor.tehranbrt;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.Window;
 
+import com.akexorcist.localizationactivity.LocalizationActivity;
+import com.alertdialogpro.AlertDialogPro;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -16,12 +23,16 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.List;
 
-public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class MapActivity extends LocalizationActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
@@ -31,16 +42,57 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.mapFragment);
         mapFragment.getMapAsync(this);
 
+        setupWindowAnimation();
+
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_map_activity, menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_help:
+                displayHelpDialog();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            finishAfterTransition();
+        }
+
+        super.onBackPressed();
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            finishAfterTransition();
+        }
+
+        return super.onSupportNavigateUp();
+
+    }
 
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
      * This is where we can add markers or lines, add listeners or move the camera.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -48,7 +100,40 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         LatLng TehranLatLng = new LatLng(35.688263, 51.389204);
-        PolylineOptions line =
+
+        PolylineOptions line1 =
+                new PolylineOptions().add(
+                        new LatLng(35.723573, 51.519510),
+                        new LatLng(35.717299, 51.498898),
+                        new LatLng(35.708970, 51.472219),
+                        new LatLng(35.704737, 51.457692),
+                        new LatLng(35.702199, 51.448907),
+                        new LatLng(35.702002, 51.447298),
+                        new LatLng(35.701687, 51.426714),
+                        new LatLng(35.701248, 51.405170),
+                        new LatLng(35.700955, 51.391673),
+                        new LatLng(35.700676, 51.378032),
+                        new LatLng(35.700251, 51.360196),
+                        new LatLng(35.699804, 51.340880),
+                        new LatLng(35.700093, 51.339641),
+                        new LatLng(35.700315, 51.339513),
+                        new LatLng(35.700559, 51.339175),
+                        new LatLng(35.700694, 51.338756),
+                        new LatLng(35.700746, 51.337077),
+                        new LatLng(35.700629, 51.336224),
+                        new LatLng(35.700402, 51.335645),
+                        new LatLng(35.700058, 51.335291),
+                        new LatLng(35.699701, 51.334636),
+                        new LatLng(35.699679, 51.331895),
+                        new LatLng(35.699932, 51.331444),
+                        new LatLng(35.700657, 51.331433),
+                        new LatLng(35.700958, 51.331621),
+                        new LatLng(35.701567, 51.331653)
+                ).width(15).color(ContextCompat.getColor(this, R.color.red));
+
+        mMap.addPolyline(line1);
+
+        PolylineOptions line4 =
                 new PolylineOptions().add(
                         new LatLng(35.651283, 51.419156),
                         new LatLng(35.650671, 51.421367),
@@ -86,26 +171,62 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         new LatLng(35.790707, 51.417349)
                 ).width(15).color(ContextCompat.getColor(this, R.color.light_blue));
 
-        mMap.addPolyline(line);
+        mMap.addPolyline(line4);
 
-        List<Station> stations = Station.getStations(this, 4);
+        int lines[] = new int[]{1, 4};
+        int color[] = new int[]{R.mipmap.ic_map_marker_hollow_red,
+                R.mipmap.ic_map_marker_hollow_light_blue};
 
-        for (Station station : stations) {
+        for (int i = 0; i < lines.length; i++) {
 
-            BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromResource(R.mipmap.ic_map_marker_filled);
+            List<Station> stations = Station.getStations(this, lines[i]);
 
-            if (station.getStationFeatures() == Station.FEATURE_ONE_WAY_DOWN ||
-                    station.getStationFeatures() == Station.FEATURE_ONE_WAY_UP) {
-                bitmapDescriptor = BitmapDescriptorFactory.fromResource(R.mipmap.ic_map_marker_hollow);
+            for (Station station : stations) {
+
+                BitmapDescriptor bitmapDescriptor;
+
+                if (station.getStationFeatures() == Station.FEATURE_ONE_WAY_DOWN ||
+                        station.getStationFeatures() == Station.FEATURE_ONE_WAY_UP ||
+                        station.getStationFeatures() - Station.FEATURE_METRO == Station.FEATURE_ONE_WAY_DOWN ||
+                        station.getStationFeatures() - Station.FEATURE_METRO == Station.FEATURE_ONE_WAY_UP) {
+                    bitmapDescriptor = BitmapDescriptorFactory.fromResource(
+                            R.mipmap.ic_map_marker_filled);
+                } else {
+                    bitmapDescriptor = BitmapDescriptorFactory.fromResource(color[i]);
+                }
+
+                mMap.addMarker(new MarkerOptions()
+                        .position(station.getStationPosition())
+                        .title(station.getStationName())
+                        .draggable(false).icon(bitmapDescriptor));
             }
 
-            mMap.addMarker(new MarkerOptions()
-                    .position(station.getStationPosition())
-                    .title(station.getStationName())
-                    .draggable(false).icon(bitmapDescriptor));
         }
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TehranLatLng, 9));
+
+    }
+
+    private void setupWindowAnimation() {
+
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Transition enterAnimation = TransitionInflater.from(this).inflateTransition(
+                    R.transition.explode);
+            getWindow().setEnterTransition(enterAnimation);
+            getWindow().setAllowEnterTransitionOverlap(false);
+        }
+
+    }
+
+    private void displayHelpDialog() {
+
+        AlertDialogPro.Builder builder = new AlertDialogPro.Builder(this);
+
+        builder.setTitle(getResources().getString(R.string.help))
+                .setMessage(R.string.dialog_message_maps_activity)
+                .setCancelable(true)
+                .setPositiveButton(R.string.ok, null)
+                .show();
 
     }
 

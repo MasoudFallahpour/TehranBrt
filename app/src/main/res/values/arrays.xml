@@ -74,6 +74,74 @@
         <item>Azadi Terminal</item>
     </string-array>
 
+    <string-array name="route_1_latitudes">
+        <item>35.723573</item>
+        <item>35.720462</item>
+        <item>35.718071</item>
+        <item>35.716111</item>
+        <item>35.714836</item>
+        <item>35.714424</item>
+        <item>35.712578</item>
+        <item>35.711154</item>
+        <item>35.709163</item>
+        <item>35.707162</item>
+        <item>35.705368</item>
+        <item>35.704266</item>
+        <item>35.703290</item>
+        <item>35.701949</item>
+        <item>35.701878</item>
+        <item>35.701778</item>
+        <item>35.701666</item>
+        <item>35.701540</item>
+        <item>35.701513</item>
+        <item>35.701264</item>
+        <item>35.701233</item>
+        <item>35.701127</item>
+        <item>35.701000</item>
+        <item>35.700809</item>
+        <item>35.700661</item>
+        <item>35.700661</item>
+        <item>35.700371</item>
+        <item>35.700099</item>
+        <item>35.699954</item>
+        <item>35.699804</item>
+        <item>35.701567</item>
+    </string-array>
+
+    <string-array name="route_1_longitudes">
+        <item>51.519510</item>
+        <item>51.509204</item>
+        <item>51.501533</item>
+        <item>51.495176</item>
+        <item>51.491176</item>
+        <item>51.489862</item>
+        <item>51.483884</item>
+        <item>51.479228</item>
+        <item>51.472753</item>
+        <item>51.466173</item>
+        <item>51.459900</item>
+        <item>51.456134</item>
+        <item>51.452610</item>
+        <item>51.445524</item>
+        <item>51.437254</item>
+        <item>51.430114</item>
+        <item>51.425172</item>
+        <item>51.420181</item>
+        <item>51.417731</item>
+        <item>51.405907</item>
+        <item>51.404549</item>
+        <item>51.399899</item>
+        <item>51.392729</item>
+        <item>51.384821</item>
+        <item>51.378576</item>
+        <item>51.377423</item>
+        <item>51.364729</item>
+        <item>51.352979</item>
+        <item>51.347733</item>
+        <item>51.340880</item>
+        <item>51.331653</item>
+    </string-array>
+
     <integer-array name="route_1_features">
         <item>0</item>
         <item>0</item>
@@ -261,8 +329,8 @@
         <item>35.687747</item>
         <item>35.694083</item>
         <item>35.697551</item>
-        <item>35.700649</item>
-        <item>35.700649</item>
+        <item>35.700158</item>
+        <item>35.701166</item>
         <item>35.706568</item>
         <item>35.710210</item>
         <item>35.725038</item>
@@ -289,8 +357,8 @@
         <item>51.379680</item>
         <item>51.378756</item>
         <item>51.378370</item>
-        <item>51.378042</item>
-        <item>51.378042</item>
+        <item>51.378085</item>
+        <item>51.377986</item>
         <item>51.377763</item>
         <item>51.377876</item>
         <item>51.381478</item>
