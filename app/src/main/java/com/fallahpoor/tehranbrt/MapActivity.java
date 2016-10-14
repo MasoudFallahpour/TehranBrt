@@ -1,5 +1,6 @@
 package com.fallahpoor.tehranbrt;
 
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -23,9 +24,16 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.List;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class MapActivity extends LocalizationActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
