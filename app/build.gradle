@@ -39,7 +39,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.2.0'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.akexorcist:localizationactivity:1.1.1'
-    compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.6'
     compile 'ch.acra:acra:4.9.0'
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
     compile 'com.google.android.gms:play-services:9.4.0'

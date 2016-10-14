@@ -3,6 +3,7 @@ package com.fallahpoor.tehranbrt;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.view.Menu;
@@ -10,7 +11,6 @@ import android.view.MenuItem;
 import android.view.Window;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
-import com.alertdialogpro.AlertDialogPro;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -220,7 +220,7 @@ public class MapActivity extends LocalizationActivity implements OnMapReadyCallb
 
     private void displayHelpDialog() {
 
-        AlertDialogPro.Builder builder = new AlertDialogPro.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setTitle(getResources().getString(R.string.help))
                 .setMessage(R.string.dialog_message_maps_activity)

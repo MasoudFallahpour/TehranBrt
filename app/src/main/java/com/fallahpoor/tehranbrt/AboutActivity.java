@@ -73,7 +73,6 @@ public class AboutActivity extends LocalizationActivity {
         ((TextView) findViewById(R.id.library2)).setMovementMethod(LinkMovementMethod.getInstance());
         ((TextView) findViewById(R.id.library3)).setMovementMethod(LinkMovementMethod.getInstance());
         ((TextView) findViewById(R.id.library4)).setMovementMethod(LinkMovementMethod.getInstance());
-        ((TextView) findViewById(R.id.library5)).setMovementMethod(LinkMovementMethod.getInstance());
         ((TextView) findViewById(R.id.fontNameTextView)).setMovementMethod(
                 LinkMovementMethod.getInstance());
 

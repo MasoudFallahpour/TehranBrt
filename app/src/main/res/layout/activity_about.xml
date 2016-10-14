@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/library_alert_dialog_pro" />
+            android:text="@string/library_acra" />
 
         <TextView
             android:id="@+id/library3"
@@ -117,19 +117,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/library_acra" />
-
-        <TextView
-            android:id="@+id/library4"
-            style="@style/TextAppearance.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
             android:text="@string/library_calligraphy" />
 
         <TextView
-            android:id="@+id/library5"
+            android:id="@+id/library4"
             style="@style/TextAppearance.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

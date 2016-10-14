@@ -12,9 +12,6 @@
     <string name="library_localization_activity" translatable="false">
         <a href="https://github.com/akexorcist/Android-LocalizationActivity">LocalizationActivity</a>
     </string>
-    <string name="library_alert_dialog_pro" translatable="false">
-        <a href="https://github.com/fengdai/AlertDialogPro">AlertDialogPro</a>
-    </string>
     <string name="library_acra" translatable="false">
         <a href="https://github.com/ACRA/acra">ACRA</a>
     </string>

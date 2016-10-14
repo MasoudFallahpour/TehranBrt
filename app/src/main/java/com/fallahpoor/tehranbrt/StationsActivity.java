@@ -22,6 +22,7 @@ package com.fallahpoor.tehranbrt;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.transition.Transition;
@@ -31,7 +32,6 @@ import android.view.MenuItem;
 import android.view.Window;
 
 import com.akexorcist.localizationactivity.LocalizationActivity;
-import com.alertdialogpro.AlertDialogPro;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -131,7 +131,7 @@ public class StationsActivity extends LocalizationActivity {
 
     private void displayHelpDialog() {
 
-        AlertDialogPro.Builder builder = new AlertDialogPro.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setTitle(getResources().getString(R.string.help))
                 .setMessage(R.string.help_text)
