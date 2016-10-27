@@ -84,7 +84,7 @@ public class Station {
                 stationFeaturesResId = R.array.route_3_features;
                 break;
             case 4:
-                stationsNamesResId = R.array.route_4_names;
+                stationsNamesResId = R.array.route_4_stations;
                 stationFeaturesResId = R.array.route_4_features;
                 stationsLatitudesResId = R.array.route_4_latitudes;
                 stationsLongitudesResId = R.array.route_4_longitudes;

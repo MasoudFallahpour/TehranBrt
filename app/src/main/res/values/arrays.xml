@@ -74,7 +74,7 @@
         <item>Azadi Terminal</item>
     </string-array>
 
-    <string-array name="route_1_latitudes">
+    <string-array name="route_1_latitudes" translatable="false">
         <item>35.723573</item>
         <item>35.720462</item>
         <item>35.718071</item>
@@ -108,7 +108,7 @@
         <item>35.701567</item>
     </string-array>
 
-    <string-array name="route_1_longitudes">
+    <string-array name="route_1_longitudes" translatable="false">
         <item>51.519510</item>
         <item>51.509204</item>
         <item>51.501533</item>
@@ -286,7 +286,7 @@
         <item>4</item>
     </integer-array>
 
-    <string-array name="route_4_names">
+    <string-array name="route_4_stations">
         <item>South Terminal</item>
         <item>Roghan Nabati Intersection</item>
         <item>Shahid Rajaee</item>
@@ -314,7 +314,7 @@
         <item>Afshar Terminal</item>
     </string-array>
 
-    <string-array name="route_4_latitudes">
+    <string-array name="route_4_latitudes" translatable="false">
         <item>35.651283</item>
         <item>35.647641</item>
         <item>35.648081</item>
@@ -342,7 +342,7 @@
         <item>35.790667</item>
     </string-array>
 
-    <string-array name="route_4_longitudes">
+    <string-array name="route_4_longitudes" translatable="false">
         <item>51.419153</item>
         <item>51.415820</item>
         <item>51.412419</item>
