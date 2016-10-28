@@ -19,10 +19,10 @@
 
 package com.fallahpoor.tehranbrt;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.GravityCompat;
@@ -31,15 +31,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.transition.Transition;
-import android.transition.TransitionInflater;
 import android.view.MenuItem;
-import android.view.Window;
-
-import com.akexorcist.localizationactivity.LocalizationActivity;
 
 import de.cketti.library.changelog.ChangeLog;
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * This Activity is the very first Activity that user sees when app is run.
@@ -47,7 +41,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  *
  * @author Masood Fallahpoor
  */
-public class MainActivity extends LocalizationActivity implements
+public class MainActivity extends BaseActivity implements
         NavigationView.OnNavigationItemSelectedListener, RecyclerViewClickListener {
 
     public static final String ROUTE_NUMBER = "route_number";
@@ -55,16 +49,7 @@ public class MainActivity extends LocalizationActivity implements
     private DrawerLayout mDrawerLayout;
 
     @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        }
 
         setDefaultLanguage(LANGUAGE_FA);
         super.onCreate(savedInstanceState);
@@ -96,18 +81,7 @@ public class MainActivity extends LocalizationActivity implements
     } // end of method onCreate
 
     @Override
-    public void onBackPressed() {
-
-        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         Intent intent;
 
@@ -145,22 +119,6 @@ public class MainActivity extends LocalizationActivity implements
         intent.putExtra(ROUTE_NUMBER, position + 1);
 
         displayActivity(intent);
-
-    }
-
-    private void setupWindowAnimation() {
-
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-
-            Transition explodeTransition = TransitionInflater.from(this).inflateTransition(
-                    R.transition.explode);
-            Window window = getWindow();
-
-            window.setReenterTransition(explodeTransition);
-            window.setExitTransition(explodeTransition);
-            window.setAllowReturnTransitionOverlap(false);
-
-        }
 
     }
 

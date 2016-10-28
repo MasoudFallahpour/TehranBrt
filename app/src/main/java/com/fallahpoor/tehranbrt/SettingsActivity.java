@@ -19,71 +19,20 @@
 
 package com.fallahpoor.tehranbrt;
 
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.transition.Transition;
-import android.transition.TransitionInflater;
-import android.view.Window;
-
-import com.akexorcist.localizationactivity.LocalizationActivity;
-
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * This Activity hosts a Fragment containing the settings of the app.
  */
-public class SettingsActivity extends LocalizationActivity {
-
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
+public class SettingsActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
         setupWindowAnimation();
-
-    }
-
-    @Override
-    public void onBackPressed() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAfterTransition();
-        }
-
-        super.onBackPressed();
-
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAfterTransition();
-        }
-
-        return super.onSupportNavigateUp();
-
-    }
-
-    private void setupWindowAnimation() {
-
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Transition enterAnimation = TransitionInflater.from(this).inflateTransition(
-                    R.transition.explode);
-            getWindow().setEnterTransition(enterAnimation);
-            getWindow().setAllowEnterTransitionOverlap(false);
-        }
 
     }
 

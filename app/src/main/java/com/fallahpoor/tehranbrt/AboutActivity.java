@@ -19,20 +19,12 @@
 
 package com.fallahpoor.tehranbrt;
 
-import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
-import android.transition.Transition;
-import android.transition.TransitionInflater;
-import android.view.Window;
+import android.text.method.MovementMethod;
 import android.widget.TextView;
-
-import com.akexorcist.localizationactivity.LocalizationActivity;
-
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * This Activity displays some information about the app including
@@ -40,19 +32,10 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  *
  * @author Masood Fallahpoor
  */
-public class AboutActivity extends LocalizationActivity {
-
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
+public class AboutActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
@@ -69,48 +52,16 @@ public class AboutActivity extends LocalizationActivity {
             appVersionTextView.setText("1.0");
         }
 
-        ((TextView) findViewById(R.id.library1)).setMovementMethod(LinkMovementMethod.getInstance());
-        ((TextView) findViewById(R.id.library2)).setMovementMethod(LinkMovementMethod.getInstance());
-        ((TextView) findViewById(R.id.library3)).setMovementMethod(LinkMovementMethod.getInstance());
-        ((TextView) findViewById(R.id.library4)).setMovementMethod(LinkMovementMethod.getInstance());
-        ((TextView) findViewById(R.id.fontNameTextView)).setMovementMethod(
-                LinkMovementMethod.getInstance());
+        MovementMethod movementMethod = LinkMovementMethod.getInstance();
+
+        ((TextView) findViewById(R.id.library1)).setMovementMethod(movementMethod);
+        ((TextView) findViewById(R.id.library2)).setMovementMethod(movementMethod);
+        ((TextView) findViewById(R.id.library3)).setMovementMethod(movementMethod);
+        ((TextView) findViewById(R.id.library4)).setMovementMethod(movementMethod);
+        ((TextView) findViewById(R.id.fontNameTextView)).setMovementMethod(movementMethod);
 
         setupWindowAnimation();
 
     } // end of method onCreate
-
-    @Override
-    public void onBackPressed() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAfterTransition();
-        }
-
-        super.onBackPressed();
-
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAfterTransition();
-        }
-
-        return super.onSupportNavigateUp();
-
-    }
-
-    private void setupWindowAnimation() {
-
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Transition enterAnimation = TransitionInflater.from(this).inflateTransition(
-                    R.transition.explode);
-            getWindow().setEnterTransition(enterAnimation);
-            getWindow().setAllowEnterTransitionOverlap(false);
-        }
-
-    }
 
 } // end of class AboutActivity

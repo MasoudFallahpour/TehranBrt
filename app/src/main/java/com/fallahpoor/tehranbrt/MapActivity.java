@@ -1,17 +1,11 @@
 package com.fallahpoor.tehranbrt;
 
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
-import android.transition.Transition;
-import android.transition.TransitionInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
 
-import com.akexorcist.localizationactivity.LocalizationActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -24,23 +18,12 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.List;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
-public class MapActivity extends LocalizationActivity implements OnMapReadyCallback {
+public class MapActivity extends BaseActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
@@ -72,28 +55,6 @@ public class MapActivity extends LocalizationActivity implements OnMapReadyCallb
         }
 
         return super.onOptionsItemSelected(item);
-
-    }
-
-    @Override
-    public void onBackPressed() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAfterTransition();
-        }
-
-        super.onBackPressed();
-
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAfterTransition();
-        }
-
-        return super.onSupportNavigateUp();
 
     }
 
@@ -212,17 +173,6 @@ public class MapActivity extends LocalizationActivity implements OnMapReadyCallb
         }
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TehranLatLng, 9));
-
-    }
-
-    private void setupWindowAnimation() {
-
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Transition enterAnimation = TransitionInflater.from(this).inflateTransition(
-                    R.transition.explode);
-            getWindow().setEnterTransition(enterAnimation);
-            getWindow().setAllowEnterTransitionOverlap(false);
-        }
 
     }
 
