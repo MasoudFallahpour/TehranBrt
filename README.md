@@ -1,4 +1,6 @@
-#Tehran BRT
+This project is no longer maintained
+
+## Tehran BRT
 *Tehran BRT* is an Android app that displays all the routes and stations of Tehran's BRT buses.
 
 ## What versions of Android does it support?
